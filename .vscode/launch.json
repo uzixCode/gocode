@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Go File", // Name shown in the debug panel
+            "type": "go", // Language type
+            "request": "launch", // Launch mode
+            "mode": "auto", // Automatically detect the mode (file/package/etc.)
+            "program": "${file}", // The current file
+            "args": [
+                "run"
+            ], // Optional: Command-line arguments
+            "showLog": true, // Optional: Show logs during debugging
+            "env": {}, // Optional: Environment variables
+            "buildFlags": "", // Optional: Custom build flags
+            "dlvToolPath": "~/.dlv/dlv" // Optional: Path to Delve debugger, if not in PATH
+        }
+    ]
+}
